@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og">
+    <title>Accesibilidad</title>
+</head>
+<body>
+    <h1 tabindex="1">Accesibilidad</h1>
+    <article role="article">
+        <h2 tabindex="2">tabindex</h2>
+        <p tabindex="3">El atributo tabindex sirve para indicar el orden de navegación con el tabulador</p>
+        <figure role="figure">
+            <picture aria-label="imagen de ejemplo de como funciona el atributo tabindex" tabindex="4">
+                <source src="ejemplo.jpg">
+                <img role="img" src="ejemplo.jpg" alt="ejemplo de tabindex">
+            </picture>
+        </figure>
+        <a role="link" href="https://www.w3schools.com/tags/att_global_tabindex.asp" tabindex="5" aria-label="Leer más sobre el atributo tabindex">Leer más</a>
+    </article>
+</body>
+</html>

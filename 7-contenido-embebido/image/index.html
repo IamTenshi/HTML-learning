@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagen</title>
+</head>
+<body>
+    <h1>Imagenes</h1>
+    <h2>Primera forma</h2>
+    <img srcset="\7-contenido-embebido\image\assets\imagen1.webp, \7-contenido-embebido\image\imgs\imagen1.jpg, \7-contenido-embebido\image\imgs\imagen1-mobile.webp 2x" src="\7-contenido-embebido\image\imgs\imagen1.jpg" alt="Imagen de portada">
+
+    <h2>segunda forma</h2>
+    <picture>
+        <source srcset="\7-contenido-embebido\image\assets\imagen1.webp" media="(min-width: 768px)">
+        <source srcset="\7-contenido-embebido\image\assets\imagen1-mobile.webp" media="(min-width: 600px)">
+        <img src="\7-contenido-embebido\image\assets\imagen1.jpg" alt="Imagen de portada">
+    </picture>
+</body>
+</html>

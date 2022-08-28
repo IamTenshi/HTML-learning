@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<HTML lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+        * Etiquetas de los formularies
+
+        form -> es la etiqueta que contiene al formulario
+        label -> Es complicado
+        input -> sirve para crear un campo que permite la entrada de datos
+        button -> sirve para crear un boton
+     -->
+
+     <h1>Elementos seleccionables</h1>
+     <form>
+        <h2>Genero</h2>
+        <label>Masculino
+            <input type="radio" value="masculino" name="gender">
+        </label> 
+        <br>
+        <label>Femenino
+            <input type="radio" value="femenino" name="gender">
+        </label> 
+        <br>
+        <label>Prefiero no decirlo
+            <input type="radio" value="desconocido" name="gender">
+        </label>
+     </form>
+
+     <h2>Lenguajes</h2>
+     <form>
+        <label>HTML
+            <input type="checkbox" name="language" value="html" id="">
+        </label>
+        <br>
+        <label>CSS
+            <input type="checkbox" name="language" value="css" id="">
+        </label>
+        <br>
+        <label>Javascript
+            <input type="checkbox" name="language" value="javascript" id="">
+        </label>
+     </form>
+
+     <h2>no se</h2>
+     <form>
+        <select name="lenguajes">
+            <!--optgroup sirve para hacer grupos de opciones-->
+            <optgroup label="FrontEnd"> 
+                <option value="html">HTML</option>
+                <option value="css">CSS</option>
+                <option value="javascript">JavaScript</option>
+            </optgroup>
+            <optgroup label="BackEnd">
+                <option value="php">PHP</option>
+                <option value="ruby">Ruby</option>
+                <option value="pyhton">Pyhton</option>
+                <option value="c++">C++</option>
+                <option value="php">PHP</option>
+                <option value="java">Java</option>
+            </optgroup>
+        </select>
+     </form>
+
+     <h2>lista de datos</h2>
+     <form>
+        <input type="list" list="lang">
+        <datalist id="lang">
+            <option value="html"></option>
+            <option value="css"></option>
+            <option value="javascript"></option>
+            <option value="php"></option>
+            <option value="ruby"></option>
+            <option value="pyhton"></option>
+            <option value="c++"></option>
+            <option value="php"></option>
+            <option value="java"></option>
+        </datalist>
+     </form>
+</body>
+</html>

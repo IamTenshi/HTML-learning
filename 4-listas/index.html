@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+         * ul -> unordered list: se usan cuando el orden de los elementos no influye 
+         * ol -> ordered list: se usan cuando el orden de los elementos es importante
+         * dl -> definition list: se usan para hacer una lista de definiciones
+    -->
+
+    <!-- ul -->
+
+    <h1>Listas</h1>
+
+    <h2>Listas desordenadas &lt;ul&gt;</h2>
+    <ul type="circle">
+        <li>El orden no importa</li>
+        <li>El orden no importa</li>
+        <li>El orden no importa</li>
+        <li>El orden no importa</li>
+        <li>El orden no importa</li>
+    </ul>
+
+    <h2>Listas ordenadas &lt;ol&gt;</h2>
+    
+    <ol type="I" start=""> 
+        <!-- con el atributo start podemos definir en que numeor comienza la lista -->
+        <!-- con el atributo type definimos el estilo de la numeracion de la lista -->
+        <li>
+            HTML
+            <ul type="square">
+                <li>Estructura</li>
+                <li>Sintaxis</li>
+                <li>Etiquetas</li>
+            </ul>
+        </li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ol>
+    
+    <h2>Listas de definicion &lt;dl&gt;</h2>
+    <!-- 
+        * dl -> crear las listas
+        * dt -> crear el titulo de la list
+        * dd -> crear la descripcion de la lista
+    -->
+    <dl>
+        <dt>HTML</dt>
+        <dd>HTML, siglas en inglés de HyperText Markup Language, hace referencia al lenguaje de marcado para la elaboración de páginas web.</dd>
+        <dt>CSS</dt>
+        <dd>CSS, en español «Hojas de estilo en cascada», es un lenguaje de diseño gráfico para definir y crear la presentación de un documento estructurado escrito en un lenguaje de marcado.</dd>
+        <dt>JavaScript</dt>
+        <dd>JavaScript es un lenguaje de programación interpretado, dialecto del estándar ECMAScript. Se define como orientado a objetos, basado en prototipos, imperativo, débilmente tipado y dinámico.</dd>
+    </dl>
+
+</body>
+</html>

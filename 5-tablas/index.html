@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            background-color: aquamarine;
+            border: 2px solid black;
+            text-align: center;
+            margin: auto;
+            border-collapse: collapse;
+        }
+
+        col {
+            background-color: cornsilk;
+        }
+
+        col:first-child {
+            background-color: papayawhip;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: .5em;
+        }
+
+        th, tfoot tr td:last-child {
+            background-color: antiquewhite;
+        }
+
+        th:first-child, tfoot {
+            background-color: peachpuff;
+        }
+
+        tr:nth-child(3) td:nth-child(2) {
+            background-color: blanchedalmond;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        *Etiquetas promedio usadas en las tablas
+
+        table -> crear la tabla
+            caption -> crear el titulo de la tabla
+            colgroup -> crea el grupo de columnas
+
+            thead -> cabecera de la tabla
+            tbody -> cuerpo de la tabla
+            tfoot -> pie de la tabla
+
+                col -> (column) crear columnas de la tabla
+                th -> (table head) crear la cabecera de cada columna de la tabla
+                tr -> (table row) crear filas en la tabla
+                td -> (table data) crear campos de la tabla
+     -->
+
+     <!-- 
+        *Atributos usados en la tabla
+
+        span -> define cuanto espacio ocupa una columna
+        rowspan -> define cuantos campos ocupa verticalmente algo en la tabla
+        colspan -> define cuantos campos ocupa horizontalmente algo en la tabla
+      -->
+    <h1>Tablas</h1>
+
+    <table>
+        <caption>Horario de Clases</caption>
+        <colgroup>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+        </colgroup>
+        <thead>
+            <tr>
+                <th>Hora</th>
+                <th>Lunes</th>
+                <th>Martes</th>
+                <th>Miercoles</th>
+                <th>Jueves</th>
+                <th>Viernes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>8:30 - 9:30</td> 
+                <td rowspan="2">Matematicas</td>
+                <td>Matematicas</td>
+                <td rowspan="2">Sociales</td>
+                <td>Naturales</td>
+                <td>Arte</td>
+            </tr>
+            <tr>
+                <td>9:30 - 10:25</td> 
+                <td>Naturales</td>
+                <td>Ingles</td>
+                <td>Deporte</td>
+            </tr>
+            <tr>
+                <td>10:25 - 11:20</td> 
+                <td colspan="5">Recreo</td>
+            </tr>
+            <tr>
+                <td>11:20 - 11:45</td> 
+                <td>Ingles</td>
+                <td>Arte</td>
+                <td>Espanyol</td>
+                <td>Naturales</td>
+                <td rowspan="2">Matematicas</td>
+            </tr>
+            <tr>
+                <td>11:45- 12:30</td> 
+                <td>Sociales</td>
+                <td>Matematicas</td>
+                <td>Arte</td>
+                <td>Espanyol</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="5">Total de asignaturas</td>
+                <td>12</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
